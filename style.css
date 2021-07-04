@@ -69,7 +69,7 @@ body {
 
 .container #popup.active {
   position: absolute;
-  top: 60%;
+  top: 50%;
   left: 50%;
   /* width: 17.5em;
   height: 12.5em; */
