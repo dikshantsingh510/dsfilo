@@ -1,4 +1,4 @@
-// Wait for DOM to load
+
 document.addEventListener("DOMContentLoaded", function () {
   // Mobile menu functionality
   const mobileMenuBtn = document.getElementById("mobileMenuBtn");
@@ -9,20 +9,20 @@ document.addEventListener("DOMContentLoaded", function () {
   // Open mobile menu
   mobileMenuBtn.addEventListener("click", () => {
     mobileNav.classList.add("active");
-    document.body.style.overflow = "hidden"; // Prevent scrolling when menu is open
+    document.body.style.overflow = "hidden"; 
   });
 
   // Close mobile menu
   closeMenu.addEventListener("click", () => {
     mobileNav.classList.remove("active");
-    document.body.style.overflow = ""; // Re-enable scrolling
+    document.body.style.overflow = ""; 
   });
 
   // Close mobile menu when clicking on a link
   mobileNavLinks.forEach((link) => {
     link.addEventListener("click", () => {
       mobileNav.classList.remove("active");
-      document.body.style.overflow = ""; // Re-enable scrolling
+      document.body.style.overflow = ""; 
     });
   });
 
